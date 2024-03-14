@@ -2,7 +2,7 @@ import { config } from "dotenv";
 config();
 
 import { InlineKeyboard, Bot, GrammyError, HttpError, Keyboard } from "grammy";
-
+const webAppUrl = "https://biznewschannel.com/";
 const bot = new Bot(process.env.BOT_API_KEY);
 
 bot.command("start", async (ctx) => {
